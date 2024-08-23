@@ -15,7 +15,7 @@ Table of Contents
     Dataset
     Installation
     Usage
-    Analysis Methodology
+
     Results and Visualization
     Contributing
     License
@@ -43,3 +43,47 @@ Prerequisites
 
     Python 3.7 or higher
     Twitter API credentials (API key, API secret key, Access token, Access token secret)
+
+Step-by-Step Installation
+
+1)Clone the Repository:git clone https://github.com/yourusername/sentiment-analysis-trump-harris.git
+cd sentiment-analysis-trump-harris
+
+2)Set Up a Virtual Environment:python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+3)Install Required Packages:
+pip install -r requirements.txt
+
+
+Usage
+
+    Configure Twitter API Credentials
+    Create a .env file in the project root and add your Twitter API credentials:
+
+    TWITTER_API_KEY=your_api_key
+    TWITTER_API_SECRET_KEY=your_api_secret_key
+    TWITTER_ACCESS_TOKEN=your_access_token
+    TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret
+
+Run the Data Collection Script:
+    python collect_tweets.py
+
+Run the Sentiment Analysis Script:
+    python sentiment_analysis.py
+
+
+Results and Visualization
+
+    Sentiment Distribution: The sentiment distribution for each political figure is visualized using histograms. These histograms display the count of positive, negative, and neutral tweets, providing a clear overview of public sentiment.
+
+    (Include an example histogram image if available)
+
+Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+    Fork the repository.
+    Create a new branch: git checkout -b feature/your-feature-name.
+    Commit your changes: git commit -m 'Add your feature'.
+    Push to the branch: git push origin feature/your-feature-name.
+    Open a pull request.
